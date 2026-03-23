@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Time Servlet App</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background: #f0f2f5; }
+        .card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; }
+        h1 { color: #333; }
+        .time { font-size: 24px; color: #007bff; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Поточний час:</h1>
+        <p class="time" th:text="${currentTime}">0000-00-00 00:00:00 UTC</p>
+    </div>
+</body>
+</html>
